@@ -4,7 +4,7 @@ const UserSchema = new mongoose.Schema({
     fullName: {
         type: String,
         require: true,
-    }, 
+    },
     email: {
         type: String,
         require: true,
@@ -15,9 +15,9 @@ const UserSchema = new mongoose.Schema({
         required: true,
     },
 },
-{
-    timestamps: true,
-},
+    {
+        timestamps: true,
+    },
 );
 
 export default mongoose.model('User', UserSchema);
